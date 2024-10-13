@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto */
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-size: 1.2em;
+    color: black;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p a {
+    color: #333;
+    text-decoration: none;
+}

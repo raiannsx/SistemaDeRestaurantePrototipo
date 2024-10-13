@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Confirmação do Pedido</title>
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Confirmação do Pedido</h1>
+
+    <!-- Seção que exibe o resumo do pedido do cliente -->
+    <section class="resumo-pedido">
+        <h3>Resumo do Pedido</h3>
+        <ul>
+            <li>Feijoada - 1 unidade - R$ 25,00</li>
+            <li>Suco de Limão - 2 unidades - R$ 10,00</li>
+            <!-- O preço total do pedido -->
+            <li><strong>Total: R$ 35,00</strong></li>
+        </ul>
+    </section>
+
+    <!-- Seção que exibe as informações do cliente para entrega -->
+    <section class="info-cliente">
+        <h3>Informações do Cliente</h3>
+        <p><strong>Nome:</strong> João Silva</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Bairro</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+    </section>
+
+    <!-- Seção que informa o tempo estimado de entrega do pedido -->
+    <section class="tempo-entrega">
+        <h3>Tempo Estimado de Entrega</h3>
+        <p>30 a 45 minutos</p>
+    </section>
+
+    <!-- Formulário com um botão que confirma o pedido -->
+    <form action="finalizar_pedido.html" method="post">
+        <input type="submit" value="Confirmar Pedido" class="botao-confirmar">
+    </form>
+    
+    <!-- Formulário com um botão que permite ao cliente voltar ao cardápio -->
+    <form action="cardapio.html" method="get">
+        <input type="submit" value="Voltar ao Cardápio" class="botao-voltar">
+    </form>
+
+    <!-- Rodapé da página com link para a seção "Sobre Nós" -->
+    <footer>
+        <p><a href="#">Sobre Nós</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema De Restaurante</title>
+</head>
+<body>
+    <h1>Sistema de Restaurante</h1>
+    
+    <!-- Área para links de Cadastro e Login -->
+    <nav>
+        <ul>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Seção de Cardápio -->
+    <section>
+        <h2>Cardápio</h2>
+        <ul>
+            <li><strong>Tira-Gosto</strong>
+                <ul>
+                    <li>Salada verde</li>
+                    <li>Batatas-fritas</li>
+                    <li>Petiscos</li>
+                </ul>
+            </li>
+            <li><strong>Pratos Principais</strong>  
+                <ul>
+                    <li>Feijoada</li>
+                    <li>Filé à Parmegiana</li>
+                </ul>
+            </li>
+            <li><strong>Sobremesas</strong>
+                <ul>
+                    <li>Pudim de Leite</li>
+                    <li>Torta de Limão</li>
+                    <li>Bolo de Chocolate</li>
+                </ul>
+            </li>
+            <li><strong>Bebidas</strong>
+                <ul>
+                    <li>Suco de Limão</li>
+                    <li>Cervejas</li>
+                    <li>Whisky</li>
+                    <li>Água</li>
+                    <li>Água com Gás</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p><a href="#">Sobre Nós</a></p>
+    </footer>
+</body>
+</html>

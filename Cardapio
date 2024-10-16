@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Sistema de Restaurante</h1>
+    <h2>Faça seu Pedido</h2>
+
+    <form action="confirmacao.html" method="post">
+        <h1>Cardápio</h1>
+
+        <!-- Bloco Tira-Gosto -->
+        <div class="menu-section">
+            <label>Tira-Gosto</label>
+            <i class="fas fa-chevron-down toggle-icon" onclick="toggleOptions('tira-gosto-options')"></i>
+            <div id="tira-gosto-options" class="hidden">
+                <h2>Tira-Gosto</h2>
+                <label><input type="checkbox" name="item" value="Salada Verde"> Salada Verde</label>
+                <label><input type="checkbox" name="item" value="Batatas Fritas"> Batatas Fritas</label>
+                <label><input type="checkbox" name="item" value="Petiscos"> Petiscos</label>
+            </div>
+        </div>
+
+        <!-- Bloco Pratos Principais -->
+        <div class="menu-section">
+            <label>Pratos Principais</label>
+            <i class="fas fa-chevron-down toggle-icon" onclick="toggleOptions('pratos-options')"></i>
+            <div id="pratos-options" class="hidden">
+                <h2>Pratos Principais</h2>
+                <label><input type="checkbox" name="item" value="Feijoada"> Feijoada</label>
+                <label><input type="checkbox" name="item" value="Filé à Parmegiana"> Filé à Parmegiana</label>
+            </div>
+        </div>
+
+        <!-- Bloco Sobremesas -->
+        <div class="menu-section">
+            <label>Sobremesas</label>
+            <i class="fas fa-chevron-down toggle-icon" onclick="toggleOptions('sobremesas-options')"></i>
+            <div id="sobremesas-options" class="hidden">
+                <h2>Sobremesas</h2>
+                <label><input type="checkbox" name="item" value="Pudim de Leite"> Pudim de Leite</label>
+                <label><input type="checkbox" name="item" value="Torta de Limão"> Torta de Limão</label>
+                <label><input type="checkbox" name="item" value="Bolo de Chocolate"> Bolo de Chocolate</label>
+            </div>
+        </div>
+
+        <!-- Bloco Bebidas -->
+        <div class="menu-section">
+            <label>Bebidas</label>
+            <i class="fas fa-chevron-down toggle-icon" onclick="toggleOptions('bebidas-options')"></i>
+            <div id="bebidas-options" class="hidden">
+                <h2>Bebidas</h2>
+                <label><input type="checkbox" name="item" value="Suco de Limão"> Suco de Limão</label>
+                <label><input type="checkbox" name="item" value="Cervejas"> Cervejas</label>
+                <label><input type="checkbox" name="item" value="Whisky"> Whisky</label>
+                <label><input type="checkbox" name="item" value="Água"> Água</label>
+                <label><input type="checkbox" name="item" value="Água com Gás"> Água com Gás</label>
+            </div>
+        </div>
+
+        <!-- Botão para submeter o pedido -->
+        <input type="submit" value="Fazer Pedido">
+    </form>
+
+    <script>
+        function toggleOptions(optionsId) {
+            const optionsDiv = document.getElementById(optionsId);
+            optionsDiv.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

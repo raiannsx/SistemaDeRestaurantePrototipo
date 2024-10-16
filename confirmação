@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o tipo de documento como HTML5 e o idioma como português do Brasil -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar acentuações -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta a visualização em dispositivos móveis, garantindo que a página seja responsiva -->
+    <link rel="stylesheet" href="confirmação.html">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+    <title>Fazer Pedido</title> <!-- Título da página, que aparece na aba do navegador -->
+</head>
+<body>
+   <!-- Título principal da página -->
+   <h1>Sistema de Restaurante</h1>
+    
+   <!-- Título específico da seção de pedidos -->
+   <h1>Faça seu Pedido</h1>
+
+    <!-- Formulário para que o usuário selecione os itens e envie o pedido -->
+    <form action="confirmacao.html" method="post">
+        <!-- A ação "confirmacao.html" é a página para onde os dados serão enviados após o envio do formulário -->
+
+        <h1>Cardápio</h1>
+        <form>
+            <!-- Bloco Tira-Gosto -->
+            <div class="menu-section">
+                <h2>Tira-Gosto</h2>
+                <label>
+                    <input type="checkbox" name="item" value="Salada Verde"> Salada Verde
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Batatas Fritas"> Batatas Fritas
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Petiscos"> Petiscos
+                </label>
+            </div>
+    
+            <!-- Bloco Pratos Principais -->
+            <div class="menu-section">
+                <h2>Pratos Principais</h2>
+                <label>
+                    <input type="checkbox" name="item" value="Feijoada"> Feijoada
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Filé à Parmegiana"> Filé à Parmegiana
+                </label>
+            </div>
+    
+            <!-- Bloco Sobremesas -->
+            <div class="menu-section">
+                <h2>Sobremesas</h2>
+                <label>
+                    <input type="checkbox" name="item" value="Pudim de Leite"> Pudim de Leite
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Torta de Limão"> Torta de Limão
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Bolo de Chocolate"> Bolo de Chocolate
+                </label>
+            </div>
+    
+            <!-- Bloco Bebidas -->
+            <div class="menu-section">
+                <h2>Bebidas</h2>
+                <label>
+                    <input type="checkbox" name="item" value="Suco de Limão"> Suco de Limão
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Cervejas"> Cervejas
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Whisky"> Whisky
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Água"> Água
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Água com Gás"> Água com Gás
+                </label>
+            </div>
+    
+            <!-- Botão para submeter o pedido -->
+            <input type="submit" value="Fazer Pedido">
+        </form>
+    </body>
+</html>

@@ -1,10 +1,14 @@
  <script>
-        document.getElementById('cadastro').onsubmit = function(event) {
+        document.getElementById('login').onsubmit = function(event) {
           event.preventDefault();
-          const username = document.getElementById('username').value;
-          const password = document.getElementById('password').value;
-          localStorage.setItem('username', username);
-          localStorage.setItem('password', password);
-          alert('Cadastro realizado com sucesso!');
+          const username = document.getElementById('loginUser').value;
+          const password = document.getElementById('loginPass').value;
+          
+          if (username === localStorage.getItem('username') && password === localStorage.getItem('password')) {
+            alert('Login bem-sucedido!');
+            // Redirecionar ou fazer algo após o login
+          } else {
+            alert('Usuário ou senha incorretos.');
+          }
         };
       </script>
